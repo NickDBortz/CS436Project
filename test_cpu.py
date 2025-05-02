@@ -41,4 +41,4 @@ def generate_text(seed, length, temperature):
         print(next_char, end='')
         seed += next_char
 
-generate_text("INT. DARK ROOM - NIGHT\n", length=GENERATION_LENGTH, temperature=TEMPERATURE)
+generate_text(SEED_TEXT, length=GENERATION_LENGTH, temperature=TEMPERATURE)
