@@ -1,9 +1,9 @@
 DATA_FILE_PATH = 'scripts.txt'
 MODEL_FILE_PATH = 'movie_script_model.keras'
 
-SEQ_LENGTH = 50
-BATCH_SIZE = 32
-EPOCHS = 20
+SEQ_LENGTH = 25
+BATCH_SIZE = 16
+EPOCHS = 10
 LAYER_SIZE = 128
 DROPOUT_RATE = 0.2
 
