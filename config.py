@@ -1,0 +1,9 @@
+DATA_FILE_PATH = 'scripts.txt'
+MODEL_FILE_PATH = 'movie_script_model.keras'
+
+SEQ_LENGTH = 50
+BATCH_SIZE = 64
+EPOCHS = 20
+
+GENERATION_LENGTH = 1000
+TEMPERATURE = 0.7
