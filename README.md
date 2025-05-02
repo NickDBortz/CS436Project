@@ -8,7 +8,7 @@
 ## Overview
 
 This is a program is a training script for training a language model to replicate some desired type of data.
-For the example data, I used a series of movie scripts from the Marvel movie franchise.
+For the example data, I used a series of movie scripts from the Marvel movie franchise.c
 
 ## Setup and Using
 
