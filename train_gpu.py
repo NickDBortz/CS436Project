@@ -38,10 +38,10 @@ for i, seq in enumerate(sequences):
 with tf.device('/GPU:0'):
     # The model is a sequential model with Long Short-Term Memory (LSTM) Layers and Droput layers and a Softmax layer at the end
     model = Sequential()
-    model.add(LSTM(256, return_sequences=True, input_shape=(SEQ_LENGTH, vocab_size)))
-    model.add(Dropout(0.2))
-    model.add(LSTM(512))
-    model.add(Dropout(0.2))
+    model.add(LSTM(LAYER_SIZE, return_sequences=True, input_shape=(SEQ_LENGTH, vocab_size)))
+    model.add(Dropout(DROPOUT_RATE))
+    model.add(LSTM(LAYER_SIZE))
+    model.add(Dropout(DROPOUT_RATE))
     model.add(Dense(vocab_size, activation='softmax'))
 
     # Compile the model and run it with categorical crossentropy loss and the adam optimizer

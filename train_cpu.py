@@ -35,10 +35,10 @@ for i, seq in enumerate(sequences):
     y[i, char_to_index[next_chars[i]]] = 1
 
 model = Sequential()
-model.add(LSTM(256, return_sequences=True, input_shape=(SEQ_LENGTH, vocab_size)))
-model.add(Dropout(0.2))
-model.add(LSTM(512))
-model.add(Dropout(0.2))
+model.add(LSTM(LAYER_SIZE, return_sequences=True, input_shape=(SEQ_LENGTH, vocab_size)))
+model.add(Dropout(DROPOUT_RATE))
+model.add(LSTM(LAYER_SIZE))
+model.add(Dropout(DROPOUT_RATE))
 model.add(Dense(vocab_size, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='adam')
